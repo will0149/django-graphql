@@ -29,7 +29,7 @@ export default function BlogsInfo() {
   return data.blogs.map(({ id, title, description, videoUrl, serviceImage, created }) => (
     <div key={id}>
         <h2>{title}</h2>
-        <img src={"http://127.0.0.1:8000/images/"+serviceImage}/>
+        <img src={serviceImage}/>
       <p>
         { description }
       </p>
